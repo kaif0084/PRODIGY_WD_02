@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101426"><meta name="description" content="A precise stopwatch with lap timing.">
+  <title>Tempo — Stopwatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body><main class="shell">
+  <header class="topbar"><a class="brand" href="#"><span class="brand-mark">◷</span>tempo<span class="brand-dot">.</span></a><span class="top-note"><i></i>YOUR TIME, YOUR PACE</span></header>
+  <section class="intro"><p class="eyebrow">FOCUS ON THE MOMENT</p><h1>Every second, <span>counts.</span></h1><p class="subtitle">A simple space to time what matters.</p></section>
+  <section class="watch-card" aria-label="Stopwatch">
+    <div class="watch-top"><span class="watch-label"><i></i> STOPWATCH</span><span class="precision">PRECISION TO 1/100 SEC</span></div>
+    <div class="clock" role="timer" aria-live="off"><span id="minutes">00</span><b>:</b><span id="seconds">00</span><small>.</small><em id="centiseconds">00</em></div>
+    <div class="time-units"><span>MIN</span><span>SEC</span><span>1/100 SEC</span></div>
+    <div class="controls"><button class="control secondary" id="lap-button" type="button" disabled><span>＋</span> Lap</button><button class="control primary" id="start-button" type="button"><span id="start-icon">▶</span> <span id="start-label">Start</span></button><button class="control secondary" id="reset-button" type="button" disabled><span>↻</span> Reset</button></div>
+    <div class="lap-panel"><div class="lap-heading"><span>LAP TIMES</span><span id="lap-count">0 LAPS</span></div><div class="laps-empty" id="laps-empty"><span>◷</span><p>Your laps will appear here</p><small>Start the stopwatch, then tap Lap to record a split.</small></div><ol class="lap-list" id="lap-list"></ol></div>
+  </section>
+  <footer><span>TAKE A BREATH. FIND YOUR RHYTHM.</span><span>Made for the moments <b>✦</b></span></footer>
+</main></body></html>
